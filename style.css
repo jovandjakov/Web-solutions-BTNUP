@@ -1,0 +1,251 @@
+:root {
+    --tamnoPlava: #140035;
+    --svetloPlava: #39a1ff;
+    --bela: #fff;
+    --svetloSiva: #ebeaea;
+    --roza: rgb(243, 99, 253);
+    --font: 16px;
+    --transition: .4s ease;
+    --padding: 100px 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+}
+button {
+    background-color: var(--tamnoPlava);
+    color: var(--bela);
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    border: 1px solid var(--tamnoPlava);
+   
+}
+button:hover {
+    color: var(--tamnoPlava);
+    background: var(--bela);
+    transition: var(--transition);
+    cursor: pointer;
+    box-shadow: 4px 4px var(--tamnoPlava);
+}
+#btnUp {
+    position: fixed;
+    background: var(--bela);
+    color: var(--tamnoPlava);
+    padding: 10px;
+    font-size: 1.3rem;
+    border: 1px solid var(--tamnoPlava);
+    left: 90%;
+    top: 85%;
+    display: none;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/*****************header*****************/
+header {
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 120vh;
+}
+header hgroup {
+    padding: 20% 0 0 5%;
+}
+header hgroup h1 {
+    font-size: 6rem;
+    color: var(--tamnoPlava);
+    text-shadow: 3px 3px 0 var(--bela);
+}
+header hgroup p {
+    font-size: 1.3rem;
+    color: var(--bela);
+    margin: 0 0 30px;
+}
+/*****************about*****************/
+.about {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.about article:first-child {
+    width: 45%;
+}
+.about article:last-child {
+    width: 45%;
+    background: var(--svetloPlava);
+    padding: 30px 30px 30px 30px;
+    color: var(--bela);
+    
+}
+.about article:first-child h2 {
+    font-size: 3rem;
+}
+.about article:first-child p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+.about article:last-child h2 {
+    font-size: 2rem;
+}
+
+
+/*****************services*****************/
+.services {
+    background: var(--svetloSiva);
+    padding: var(--padding);
+}
+.fleks {
+    display: flex;
+}
+img {
+    width: 100%;
+}
+.services article {
+    margin: 20px;
+}
+.services article h2 {
+    font-size: 2.5rem;
+    color: var(--tamnoPlava);
+}
+.services article p {
+    margin-bottom: 20px;
+}
+
+/*****************projects*****************/
+.projects {
+    padding: var(--padding);
+    
+}
+.projects2  {
+    display: flex;
+}
+
+.recent .par {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.recent h2 {
+    font-size: 3rem;
+    color: var(--tamnoPlava);
+    text-align: center;
+}
+
+.recent article h3  {
+    font-size: 1.5rem;
+    color: var(--tamnoPlava);
+    margin-bottom: 20px;
+}
+.recent article p  {
+    margin-bottom: 20px;
+}
+/*****************footer*****************/
+footer {
+    background: var(--svetloPlava);
+    padding: var(--padding);
+    color: var(--bela)
+}
+footer h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+footer .foot {
+    display: flex;
+}
+footer .foot article h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+footer .foot article p {
+    margin-bottom: 0px;
+}
+footer .foot article  .phone {
+    margin-bottom: 30px;
+}
+/*****************bootom bar*****************/
+.bottom-bar {
+    text-align: center;
+    background: var(--tamnoPlava);
+    color: var(--bela);
+    padding: 30px 0;
+}
+
+/****************responsive*****************/
+@media(max-width: 768px) {
+    
+
+header hgroup h1 {
+    font-size: 3rem;
+    color: var(--tamnoPlava);
+    text-shadow: 3px 3px 0 var(--bela);
+}
+header {
+    height: 80vh;
+    
+}
+header hgroup p {
+color: var(--tamnoPlava);
+}
+.container {
+    width: 90%;
+}
+.about {
+    
+    display: block;
+    
+}
+.about article:first-child {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.about article:last-child {
+    width: 100%;
+    
+}
+.about article:first-child h2 {
+    font-size: 2rem;
+}
+.about article:last-child h2 {
+    font-size: 1.5rem;
+}
+
+.fleks {
+    display: block;
+}
+.services article h2 {
+    font-size: 2rem;
+    
+}
+.projects2 {
+    display: block;
+}
+.recent h2 {
+    font-size: 2rem;
+}
+footer .foot {
+    display: block;
+}
+footer h2 {
+    font-size: 2rem;
+}
+footer .foot article h3 {
+    font-size: 1.2rem;
+}
+#btnUp {
+    font-size: 0.8rem;
+    
+    left: 85%;
+    top: 85%;
+}
+}
